@@ -1,0 +1,88 @@
+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 Lfahmi
+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 hidayat
+B@tuAj!1234=*zzZ
+
+/////////////////////////////istilah git
+- repo ,folder project
+- commit rekaman/snapshot dari repo
+- hash, penanda unik pada commit
+- branch, cabang dari commit
+- merge, menggabungkan branch
+- remote, cumber yang memiliki repo
+- clone, mengambil repo dari remote
+- push, mengirim commit ke repo
+- pull, mengambil commit dari repo
+
+////////////////////////////bekerja dengan GIT
+- 3 area repository
+1. working tree
+2. staging area
+3. History
+
+sebelum commit komputer atau directory harus dikenali oleh git 
+dengan memasukkan username san email
+$ git config --local user.name <username>
+$ git config --local user.email <email>
+- kalau masuk oce editor vim klik :q! untuk close
+- git add .
+- git commit -m "<pesan>"
+- git log
+- git log -3 (untuk melihat 3 log terakhir)
+- git log -- <nama file>
+- git checkout <5 digit pertaa dari hash commit> -- <nama file>
+
+
+//////////////////////////// Branch
+- git branch, untuk melihat semua branch dilokal
+- git branch -all, untuk melihat semua branch dinclude remotenya
+- git branch <nama branch>, membuat branch baru
+- git checkout <nama branch>, untuk berpindah branch
+
+- vscode
+- tanda ! lalu tab, untuk html
+- kalau status modified klik $ git commit -am <pesan>
+- head, pointer untuk melihat branch aktif
+- git log --all --decorate  --oneline --graph
+- alias graph=" git log --all --decorate  --oneline --graph"
+- 2 jenis merge dalam git
+  1. fast forward , merge branch satu jalur
+  2. three-way merge, merge branch beda jalur
+- direct path, branch jalur lgsg ke master
+- git branch -d <Nama branch>, untuk menghapus branch
+- git branch --merged, untuk mengetahui branch yg sdh di merge
+
+////////////////////////////git merge conflict
+- detached head
+
+////////////////////////////Remote
+- satu repo local bisa tergubung ke beberapa remote
+- git clone <url> ,mendownload file dari repo
+- git remote
+- git remote -v
+- git push 
+- git remote add origin git@github.com:Lfahmi22/wpu-git-test-2.git
+
+
+//////////////////////////// perintah git 
+
+* git add <nama file>
+* git add. (untuk menambhkan semua file)
+* git reset --hard >>untuk membatalkan perubahan dan mengembalikan 
+  ke commmit terakhir
+* git clone >>meng-copy repository dari server
+* ls >> untu melihat daftar folder
+* rm -rf <nama file>
+* pwd (print working directory)>>menampilak folder aktif
+*  kalau masuk vim klik ":q!
+* git checkout (7angka file yg mau di checkout)
+* git checkout (7667b1a) -- (nama file)
+* git checkout master
+* git checkout -m "(pesan)
+* gitcommit -a -m "(pesan)" atau git commit -am "(pesan)"
+* git branch <nama branch>
+
+* git log --all --decorate --oneline --graph, menampilkan histori atau
+  log secara graph
+
+* alias graph="git log --all --decorate --oneline --graph", cukup
+  mengetikan graph untuk menampilkan log secaara graph
